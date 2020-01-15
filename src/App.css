@@ -2,37 +2,89 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo-item {
+  border-style: solid;
+  height: 100px;
+  width: 100px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#todo-screen {
+  margin: auto;
+  width: 500px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  justify-content: space-evenly;
+  border-style: solid;
 }
 
-.App-link {
-  color: #61dafb;
+#todo-setup {
+  margin: auto;
+  width: 500px;
+  justify-content: space-evenly;
+  border-style: solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#add-todo {
+  margin: auto;
+  width: 500px;
+  height: 70px;
+  justify-content: space-evenly;
+  border-style: solid;
+  position: relative;
+  text-align: center;
+}
+
+#input-todo {
+  padding: 5px;
+  height: 30px;
+  width: 75%;
+  border: none;
+  margin: auto;
+  margin-top: 15px;
+  font-size: 100%;
+}
+
+.todo-item {
+  margin: auto;
+  height: 50px;
+  width: 500px;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.todo-item[value^=true]{
+  opacity: 50%;
+}
+
+.todo-text {
+  height: 100%;
+  text-align: center;
+  margin-top: 10px;
+  width: 50%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 25px;
+}
+
+.actionButton {
+  margin: auto;
+  float: left;
+  height: 40px;
+  width: 65px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+}
+
+
+#submit {
+  margin: auto;
+  height: 40px;
+  width: 65px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+}
+
+.todo-text[value^=true] {
+  text-decoration: line-through;
+  opacity: 50%;
 }
